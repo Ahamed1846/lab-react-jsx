@@ -24,7 +24,20 @@ const imageData = ()=>{
 }
 
 function App() {
-  // code here
+  const data = imageData();
+
+  return (
+    <div style={{ display: "grid",gridTemplateColumns:"repeat(2, 1fr)", gap: "10px"}}>
+      {data.map(item => (
+        <img
+          key={item.id}
+          src={item.img}
+          alt={`Elephant ${item.id}`}
+          style={{ width: "100%",height:"auto"}}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default App;

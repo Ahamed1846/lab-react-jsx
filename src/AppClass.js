@@ -27,4 +27,14 @@ export default class AppClass extends Component{
   }
 
   // code here
+  render() {
+    const data = this.imageData();
+    return (
+      <div className="container">
+        {data.map(item => (
+          <img key={item.id} src={item.img} alt={`Elephant ${item.id}`} className="image" />
+        ))}
+      </div>
+    );
+  }
 }
