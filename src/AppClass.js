@@ -30,10 +30,18 @@ export default class AppClass extends Component{
   render() {
     const data = this.imageData();
     return (
-      <div className="container">
+      <div className="box">
+        <h2>Kalvium Gallery</h2>
+        <div className="container">
         {data.map(item => (
-          <img key={item.id} src={item.img} alt={`Elephant ${item.id}`} className="image" />
+          <img 
+            key={item.id} 
+            src={item.img} 
+            alt={`Elephant ${item.id}`} 
+            className="image" 
+          />
         ))}
+      </div>
       </div>
     );
   }

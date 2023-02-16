@@ -1,11 +1,14 @@
 /* add your styles here */
+.box{
+  text-align: center;
+}
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-  }
+}
   
-  .image {
-    width: 100%;
-    height: auto;
-  }
+.image {
+  width: 100%;
+  height: auto;
+}
