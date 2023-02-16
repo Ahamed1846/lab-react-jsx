@@ -27,15 +27,15 @@ function App() {
   const data = imageData();
 
   return (
-    <div style={{ textAlign:"center"}}>
+    <div className="box">
       <h2>Kalvium Gallery</h2>
-      <div style={{ display: "grid",gridTemplateColumns:"repeat(2, 1fr)", gap: "10px"}}>
+      <div className="container">
         {data.map(item => (
           <img
             key={item.id}
             src={item.img}
             alt={`Elephant ${item.id}`}
-            style={{ width: "100%",height:"auto"}}
+            className="image" 
           />
         ))}
       </div>
